@@ -3,13 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Алекса</title>
+  <title>Алекса – Сертифицированный специалист</title>
+  <meta name="description" content="Алекса – сертифицированный специалист с опытом более 10 лет. Связаться и отправить заявку прямо со страницы." />
+  <meta name="keywords" content="Алекса, сертифицированный специалист, консультации, сертификаты" />
+  <meta name="author" content="Алекса" />
+  <meta property="og:title" content="Алекса – Сертифицированный специалист" />
+  <meta property="og:description" content="Связаться и отправить заявку прямо со страницы." />
+  <meta property="og:image" content="Aleksa.jpg" />
   <style>
+    :root {
+      --main-color: #d60000;
+      --font-color: #fff;
+      --input-bg: #f2f2f2;
+    }
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #d60000;
-      color: white;
+      background-color: var(--main-color);
+      color: var(--font-color);
     }
     .container {
       max-width: 800px;
@@ -17,20 +31,21 @@
       padding: 20px;
     }
     img.portrait {
-      width: 200px;
+      width: 100%;
+      max-width: 200px;
       border-radius: 10px;
       margin-bottom: 20px;
     }
     .bio {
       font-size: 18px;
       line-height: 1.6;
+      margin-bottom: 30px;
     }
     .flag {
       font-size: 32px;
     }
     form {
-      margin-top: 30px;
-      background: #fff;
+      background: var(--input-bg);
       color: #333;
       padding: 20px;
       border-radius: 10px;
@@ -39,53 +54,14 @@
       width: 100%;
       padding: 10px;
       margin-top: 10px;
-      margin-bottom: 20px;
       font-size: 16px;
+      border: none;
+      border-radius: 6px;
+    }
+    input[type="submit"] {
+      background-color: var(--main-color);
+      color: var(--font-color);
+      cursor: pointer;
     }
     .contacts {
-      margin-top: 30px;
-    }
-    .contacts i {
-      margin-right: 8px;
-    }
-    .certificates {
-      margin-top: 40px;
-      display: flex;
-      justify-content: space-between;
-    }
-    .certificates img {
-      width: 32%;
-      border-radius: 8px;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <img src="Aleksa.jpg" alt="Aleksa" class="portrait" />
-    <div class="bio">
-      <span class="flag">🇨🇭</span> Меня зовут Алекса, сертифицированный специалист с опытом работы более 10 лет...
-    </div>
-
-    <form action="mailto:info@aleksa.pro" method="post" enctype="text/plain">
-      <input type="text" name="Имя" placeholder="Имя" required />
-      <input type="text" name="Фамилия" placeholder="Фамилия" required />
-      <input type="tel" name="Телефон" placeholder="Номер телефона" required />
-      <textarea name="Сообщение" rows="5" placeholder="Ваше сообщение..."></textarea>
-      <input type="submit" value="Отправить" />
-    </form>
-
-    <div class="contacts">
-      <p><i>📞</i> +41 79 123 4567</p>
-      <p><i>💬</i> Telegram: @aleksa</p>
-      <p><i>📳</i> Viber: +41 79 123 4567</p>
-    </div>
-
-    <div class="certificates">
-      <img src="cert1.jpg" alt="Сертификат 1" />
-      <img src="cert2.jpg" alt="Сертификат 2" />
-      <img src="cert3.jpg" alt="Сертификат 3" />
-    </div>
-  </div>
-</body>
-</html>
-
+      margin-top
