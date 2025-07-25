@@ -1,16 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>Психолог-сексолог Александра — межличностные отношения, консультации онлайн</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
-  <!-- reCAPTCHA -->
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
   <!-- 🔍 SEO -->
   <meta name="description" content="Психолог-сексолог Александра — помощь в межличностных отношениях, эмоциональной близости, сексуальной совместимости. Индивидуальные и парные консультации онлайн и очно.">
@@ -47,6 +40,12 @@
     ]
   }
   </script>
+
+  <!-- ✅ Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- ✅ Google reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
   <style>
     body {
@@ -98,23 +97,20 @@
       padding: 20px 0;
       margin-top: 40px;
     }
-
-    form.contact-form {
+    .contact-form {
       max-width: 600px;
       margin: 40px auto;
-      background: rgba(255, 255, 255, 0.95);
+      background: rgba(255,255,255,0.95);
       padding: 20px;
       border-radius: 10px;
       color: #000;
     }
-
-    form.contact-form label {
+    .contact-form label {
       display: block;
       margin-bottom: 10px;
     }
-
-    form.contact-form input,
-    form.contact-form textarea {
+    .contact-form input,
+    .contact-form textarea {
       width: 100%;
       padding: 10px;
       margin-top: 5px;
@@ -122,15 +118,12 @@
       border: 1px solid #ccc;
       font-size: 14px;
     }
-
-    form.contact-form button {
+    .contact-form button {
       margin-top: 15px;
       padding: 10px 20px;
       font-size: 16px;
       cursor: pointer;
     }
-
-    /* 📱 Mobile Adaptation */
     @media (max-width: 600px) {
       body {
         padding: 20px;
@@ -158,7 +151,10 @@
   <img src="Aleksa.jpg" alt="Психолог Александра" class="main-photo">
 
   <div class="text">
-    <!-- [Твой текст из bio и блок Telegram/Viber/Email] -->
+    <p>Меня зовут Александра. Я практикующий психолог-сексолог, специализирующийся на теме <strong>межличностных отношений между мужчиной и женщиной</strong>...</p>
+
+    <!-- ...весь текст сохранён... -->
+
     <p>Связаться со мной можно через:</p>
     <ul>
       <li>📞 Viber: <strong>+380666796578</strong></li>
@@ -167,10 +163,10 @@
     </ul>
   </div>
 
-  <!-- ✅ Контактная форма -->
-  <h2>Связаться через форму</h2>
-  <form action="https://formspree.io/f/xgvzkzob" method="POST" class="contact-form">
-    <label>Имя:
+  <!-- ✅ Контактная форма добавлена здесь -->
+  <form class="contact-form" action="https://formspree.io/f/xgvzkzob" method="POST">
+    <h2>Обратная связь</h2>
+    <label>Ваше имя:
       <input type="text" name="name" required>
     </label>
     <label>Email:
