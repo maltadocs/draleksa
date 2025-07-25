@@ -1,12 +1,45 @@
-
-<!-- Полный index.html -->
 <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
   <title>Психолог-сексолог Александра — межличностные отношения, консультации онлайн</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- SEO, Open Graph, Twitter, Schema оставлены без изменений -->
+
+  <!-- 🔍 SEO -->
+  <meta name="description" content="Психолог-сексолог Александра — помощь в межличностных отношениях, эмоциональной близости, сексуальной совместимости. Индивидуальные и парные консультации онлайн и очно.">
+  <meta name="keywords" content="психолог, сексолог, межличностные отношения, консультации, пары, юнгианский анализ, эмоциональная близость, ревность, доверие, психотерапия">
+  <meta name="author" content="Александра">
+
+  <!-- 🌐 Open Graph -->
+  <meta property="og:title" content="Психолог-сексолог Александра">
+  <meta property="og:description" content="Консультации по межличностным отношениям, сексуальной совместимости и эмоциональной близости.">
+  <meta property="og:image" content="Aleksa.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aleksa.pro">
+
+  <!-- 🐦 Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Психолог-сексолог Александра">
+  <meta name="twitter:description" content="Помощь в отношениях, сексуальной совместимости и эмоциональной близости.">
+  <meta name="twitter:image" content="Aleksa.jpg">
+  <meta name="twitter:site" content="@aleksa_pro">
+
+  <!-- 🧠 Schema.org Microdata -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Александра",
+    "jobTitle": "Психолог-сексолог",
+    "url": "https://aleksa.pro",
+    "image": "https://aleksa.pro/Aleksa.jpg",
+    "email": "info@aleksa.pro",
+    "telephone": "+380666796578",
+    "sameAs": [
+      "https://t.me/PsyAlexandra_Odesa"
+    ]
+  }
+  </script>
 
   <style>
     body {
@@ -50,39 +83,6 @@
       max-height: 100px;
       border-radius: 4px;
     }
-    form {
-      background: rgba(255,255,255,0.85);
-      padding: 20px;
-      border-radius: 8px;
-      max-width: 600px;
-      margin: 40px auto;
-      color: #000;
-    }
-    form label {
-      font-weight: bold;
-      margin-top: 10px;
-      display: block;
-    }
-    form input, form textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-      border-radius: 4px;
-      border: 1px solid #ccc;
-      font-size: 16px;
-    }
-    form button {
-      background: #444;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 16px;
-    }
-    form button:hover {
-      background: #333;
-    }
     footer {
       background-color: #fff;
       color: #333;
@@ -91,6 +91,8 @@
       padding: 20px 0;
       margin-top: 40px;
     }
+
+    /* 📱 Mobile Adaptation */
     @media (max-width: 600px) {
       body {
         padding: 20px;
@@ -109,26 +111,12 @@
         max-width: 80%;
         margin-bottom: 15px;
       }
-      form {
-        padding: 15px;
-        margin: 20px auto;
-      }
-      form label {
-        font-size: 14px;
-      }
-      form input, form textarea {
-        font-size: 14px;
-        padding: 8px;
-      }
-      form button {
-        padding: 8px 16px;
-        font-size: 14px;
-      }
     }
   </style>
 </head>
 <body>
   <h1>Психолог-сексолог Александра</h1>
+
   <img src="Aleksa.jpg" alt="Психолог Александра" class="main-photo">
 
   <div class="text">
@@ -180,21 +168,40 @@
       <li>Дополнительные курсы: работа с травмой, психосоматика, эмоциональные зависимости, личностные границы</li>
     </ul>
 
-    <h2>Контакты</h2>
+    <p>Связаться со мной можно через:</p>
     <ul>
-      <li>📳 Viber: <strong>+380666796578</strong></li>
-      <li>📲 Telegram: <strong>@PsyAlexandra_Odesa</strong></li>
+      <li>📞 Viber: <strong>+380666796578</strong></li>
+      
+      <li>📧 Telegram: <strong>@PsyAlexandra_Odesa</strong></li>
     </ul>
   </div>
 
-  <h2>Связаться через форму</h2>
-  <form action="https://formspree.io/f/xgvzkzob" method="POST">
-    <input type="hidden" name="_subject" value="Новое обращение с сайта aleksa.pro">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_template" value="table">
-    <input type="hidden" name="_next" value="https://aleksa.pro/спасибо.html">
+  <div class="certificates">
+    <img src="cert1.jpg" alt="">
+    <img src="cert2.jpg" alt="">
+    <img src="cert3.jpg" alt="">
+  </div>
 
-    <label for="name">Имя:</label>
-    <input type="text" name="name" required>
+  <!-- 📬 Форма обратной связи -->
+  <section id="contact" style="padding: 40px; background: rgba(255, 255, 255, 0.9); color: #000; border-radius: 8px; max-width: 600px; margin: 60px auto;">
+    <h2 style="text-align: center;">Связаться со мной</h2>
+    <form id="contact-form" action="https://formspree.io/f/xgvzkzob" method="POST">
+      <input type="text" name="name" placeholder="Ваше имя" required style="width: 100%; margin: 10px 0; padding: 12px; border: 1px solid #ccc; border-radius: 5px;">
+      <input type="email" name="email" placeholder="Ваш email" required style="width: 100%; margin: 10px 0; padding: 12px; border: 1px solid #ccc; border-radius: 5px;">
+      <textarea name="message" placeholder="Ваше сообщение" required style="width: 100%; margin: 10px 0; padding: 12px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
 
-    <label for="
+      <!-- Google reCAPTCHA -->
+      <div class="g-recaptcha" data-sitekey="6LfPEo8rAAAAAJo68ZxBdftZy6lBzMA0K99tPhlM" style="margin: 20px 0;"></div>
+
+      <button type="submit" style="background-color: #5cb85c; color: white; padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+        Отправить сообщение
+      </button>
+    </form>
+  </section>
+
+  <!-- Подключение Google reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+  <footer>&copy; aleksa.pro — Все права защищены</footer>
+</body>
+</html>
