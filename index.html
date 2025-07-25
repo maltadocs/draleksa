@@ -1,67 +1,109 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Алекса – Сертифицированный специалист</title>
-  <meta name="description" content="Алекса – сертифицированный специалист с опытом более 10 лет. Связаться и отправить заявку прямо со страницы." />
-  <meta name="keywords" content="Алекса, сертифицированный специалист, консультации, сертификаты" />
-  <meta name="author" content="Алекса" />
-  <meta property="og:title" content="Алекса – Сертифицированный специалист" />
-  <meta property="og:description" content="Связаться и отправить заявку прямо со страницы." />
-  <meta property="og:image" content="Aleksa.jpg" />
+  <meta charset="UTF-8">
+  <title>Aleksa.pro — Связь</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    :root {
-      --main-color: #d60000;
-      --font-color: #fff;
-      --input-bg: #f2f2f2;
-    }
-    * {
-      box-sizing: border-box;
-    }
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: var(--main-color);
-      color: var(--font-color);
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #a10000, #520000);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
     }
+
     .container {
-      max-width: 800px;
-      margin: auto;
-      padding: 20px;
+      background: rgba(0,0,0,0.4);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+      width: 90%;
+      max-width: 500px;
+      animation: fadeIn 1.2s ease forwards;
     }
-    img.portrait {
-      width: 100%;
-      max-width: 200px;
-      border-radius: 10px;
-      margin-bottom: 20px;
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
-    .bio {
-      font-size: 18px;
-      line-height: 1.6;
-      margin-bottom: 30px;
+
+    h1 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 28px;
+      text-transform: uppercase;
     }
-    .flag {
-      font-size: 32px;
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-size: 14px;
     }
-    form {
-      background: var(--input-bg);
-      color: #333;
-      padding: 20px;
-      border-radius: 10px;
-    }
+
     input, textarea {
       width: 100%;
       padding: 10px;
-      margin-top: 10px;
-      font-size: 16px;
+      margin-top: 5px;
+      border-radius: 8px;
       border: none;
-      border-radius: 6px;
+      font-size: 16px;
     }
-    input[type="submit"] {
-      background-color: var(--main-color);
-      color: var(--font-color);
+
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      width: 100%;
+      background: white;
+      color: #a10000;
+      font-weight: bold;
+      border-radius: 8px;
+      border: none;
       cursor: pointer;
+      transition: background 0.3s ease;
     }
-    .contacts {
-      margin-top
+
+    button:hover {
+      background: #ffcccc;
+    }
+
+    footer {
+      margin-top: 30px;
+      font-size: 14px;
+      text-align: center;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Связаться с нами</h1>
+    <form action="https://api.staticforms.xyz/submit" method="post">
+      <input type="hidden" name="accessKey" value="ВАШ_STATIC_KEY">
+      <input type="hidden" name="redirectTo" value="https://aleksa.pro/success.html">
+
+      <label for="name">Имя</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Сообщение</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Отправить</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; aleksa.pro — все права защищены
+  </footer>
+</body>
+</html>
