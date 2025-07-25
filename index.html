@@ -171,9 +171,26 @@
     <p>Связаться со мной можно через:</p>
     <ul>
       <li>📞 Viber: <strong>+380666796578</strong></li>
-      
+      <li>📧 Email: <strong>info@aleksa.pro</strong></li>
       <li>📧 Telegram: <strong>@PsyAlexandra_Odesa</strong></li>
     </ul>
+
+    <!-- 📬 Форма обратной связи -->
+    <section id="contact" style="padding: 40px; background: rgba(255, 255, 255, 0.9); color: #000; border-radius: 8px; max-width: 600px; margin: 40px auto;">
+      <h2 style="text-align: center;">Или напишите мне напрямую</h2>
+      <form id="contact-form" action="https://formspree.io/f/xgvzkzob" method="POST">
+        <input type="text" name="name" placeholder="Ваше имя" required style="width: 100%; margin: 10px 0; padding: 12px; border: 1px solid #ccc; border-radius: 5px;">
+        <input type="email" name="email" placeholder="Ваш email" required style="width: 100%; margin: 10px 0; padding: 12px; border: 1px solid #ccc; border-radius: 5px;">
+        <textarea name="message" placeholder="Ваше сообщение" required style="width: 100%; margin: 10px 0; padding: 12px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+
+        <!-- Google reCAPTCHA -->
+        <div class="g-recaptcha" data-sitekey="6LfPEo8rAAAAAJo68ZxBdftZy6lBzMA0K99tPhlM" style="margin: 20px 0;"></div>
+
+        <button type="submit" style="background-color: #5cb85c; color: white; padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
+          Отправить сообщение
+        </button>
+      </form>
+    </section>
   </div>
 
   <div class="certificates">
@@ -182,26 +199,10 @@
     <img src="cert3.jpg" alt="">
   </div>
 
-  <!-- 📬 Форма обратной связи -->
-  <section id="contact" style="padding: 40px; background: rgba(255, 255, 255, 0.9); color: #000; border-radius: 8px; max-width: 600px; margin: 60px auto;">
-    <h2 style="text-align: center;">Связаться со мной</h2>
-    <form id="contact-form" action="https://formspree.io/f/xgvzkzob" method="POST">
-      <input type="text" name="name" placeholder="Ваше имя" required style="width: 100%; margin: 10px 0; padding: 12px; border: 1px solid #ccc; border-radius: 5px;">
-      <input type="email" name="email" placeholder="Ваш email" required style="width: 100%; margin: 10px 0; padding: 12px; border: 1px solid #ccc; border-radius: 5px;">
-      <textarea name="message" placeholder="Ваше сообщение" required style="width: 100%; margin: 10px 0; padding: 12px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
-
-      <!-- Google reCAPTCHA -->
-      <div class="g-recaptcha" data-sitekey="6LfPEo8rAAAAAJo68ZxBdftZy6lBzMA0K99tPhlM" style="margin: 20px 0;"></div>
-
-      <button type="submit" style="background-color: #5cb85c; color: white; padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer; font-size: 16px;">
-        Отправить сообщение
-      </button>
-    </form>
-  </section>
-
   <!-- Подключение Google reCAPTCHA -->
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
   <footer>&copy; aleksa.pro — Все права защищены</footer>
 </body>
 </html>
+
