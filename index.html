@@ -2,81 +2,71 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Aleksa.pro — Связь</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     body {
+      font-family: sans-serif;
       margin: 0;
-      padding: 0;
-      font-family: 'Roboto', sans-serif;
-      background: linear-gradient(135deg, #a10000, #520000);
-      color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
+      padding: 20px;
+      background: #fafafa;
+      color: #333;
     }
-
     .container {
-      background: rgba(0,0,0,0.4);
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
-      width: 90%;
-      max-width: 500px;
-      animation: fadeIn 1.2s ease forwards;
+      max-width: 800px;
+      margin: auto;
     }
-
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
     h1 {
       text-align: center;
-      margin-bottom: 25px;
       font-size: 28px;
-      text-transform: uppercase;
+      margin-bottom: 20px;
     }
-
+    .image-box {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .image-box img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
     label {
       display: block;
       margin-top: 15px;
       font-size: 14px;
     }
-
     input, textarea {
       width: 100%;
       padding: 10px;
       margin-top: 5px;
-      border-radius: 8px;
-      border: none;
-      font-size: 16px;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+      font-size: 15px;
     }
-
     button {
       margin-top: 20px;
       padding: 12px;
-      width: 100%;
-      background: white;
-      color: #a10000;
-      font-weight: bold;
-      border-radius: 8px;
+      background-color: #a10000;
+      color: white;
       border: none;
+      width: 100%;
+      font-weight: bold;
+      border-radius: 5px;
       cursor: pointer;
-      transition: background 0.3s ease;
     }
-
     button:hover {
-      background: #ffcccc;
+      background-color: #c00000;
     }
-
     footer {
-      margin-top: 30px;
-      font-size: 14px;
+      margin-top: 40px;
+      font-size: 12px;
       text-align: center;
       opacity: 0.6;
     }
@@ -85,25 +75,27 @@
 <body>
   <div class="container">
     <h1>Связаться с нами</h1>
-    <form action="https://api.staticforms.xyz/submit" method="post">
-      <input type="hidden" name="accessKey" value="ВАШ_STATIC_KEY">
-      <input type="hidden" name="redirectTo" value="https://aleksa.pro/success.html">
 
+    <div class="image-box">
+      <img src="photo.jpg" alt="Фото или сертификат" />
+    </div>
+
+    <form>
       <label for="name">Имя</label>
-      <input type="text" id="name" name="name" required>
+      <input type="text" id="name" name="name" />
 
       <label for="email">Email</label>
-      <input type="email" id="email" name="email" required>
+      <input type="email" id="email" name="email" />
 
       <label for="message">Сообщение</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
+      <textarea id="message" name="message" rows="5"></textarea>
 
       <button type="submit">Отправить</button>
     </form>
-  </div>
 
-  <footer>
-    &copy; aleksa.pro — все права защищены
-  </footer>
+    <footer>
+      &copy; aleksa.pro — Все права защищены
+    </footer>
+  </div>
 </body>
 </html>
